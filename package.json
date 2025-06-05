@@ -6,6 +6,7 @@
   },
   "scripts": {
     "dev": "tailwindcss -i ./src/styles/input.css -o ./dist/output.css --watch",
+    "start": "npx tsc --watch",
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css"
   }
 }

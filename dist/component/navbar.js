@@ -1,5 +1,5 @@
-export default function Navbar(): string {
-  return `
+export default function Navbar() {
+    return `
     <nav class="bg-blue-600 px-4 py-3 flex items-center justify-between flex-wrap">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
         <span class="font-semibold text-xl tracking-tight">MyApp</span>

@@ -1,4 +1,4 @@
-export default function Product(): string {
+export default function Product() {
     return `
         <div class="p-4">
         <h2 class="text-2xl font-semibold">Product Page</h2>
@@ -13,4 +13,4 @@ export default function Product(): string {
         </div>
         </div>
     `;
-    }
+}
