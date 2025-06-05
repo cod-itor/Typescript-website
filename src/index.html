@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fetch DummyJSON</title>
+</head>
+<body>
+  <h1>Product List</h1>
+  <ul id="product-list"></ul>
+  <p id="li"></p>
+
+  <script>
+    async function fetchProducts() {
+      const res = await fetch('https://dummyjson.com/products');
+      const data = await res.json();
+
+      const list = document.getElementById('product-list');
+      data.products.forEach(product => {
+        const item = document.createElement('li');
+        item.textContent = product.title;
+        list.appendChild(item);
+      });
+    }
+
+    fetchProducts();
+  </script>
+</body>
+</html>
