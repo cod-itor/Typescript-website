@@ -1,6 +1,7 @@
-export default function Home(): string {
-  return `
-   <section>
+export function Home(): HTMLElement {
+  const div = document.createElement('div');
+  div.innerHTML = `
+  <section>
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Payments tool for software companies</h1>
@@ -141,9 +142,93 @@ export default function Home(): string {
                 <button class="w-fit ml-4 mb-6 text-xl text-rose-700 dark:text-white font-bold py-2 px-4 dark:border dark:border-gray-500 rounded-full uppercase">Order now</button>
             </div>
         </div>
+         <div class="flex flex-col gap-4 rounded-lg shadow-lg bg-white dark:bg-[#262525] group">
+            <!-- Card Image -->
+            <img class="w-[16rem] h-[12rem] sm:w-[18rem] sm:h-[14rem] object-center aspect-square rounded-t-lg" src="https://techakim.com/sam/tg/7268/li/imgs/pizza.jpg" alt="Card Image" />
+
+            <div class="flex flex-col">
+                <!--  -->
+                <div class="flex items-center justify-between my-4">
+                    <!-- Rater -->
+                    <div
+                        class="relative w-1/2 h-[4rem] flex items-center justify-end border-l-4 border-rose-600 rounded-tr-full rounded-br-full bg-rose-100 dark:bg-[#414141]">
+
+                        <img class="absolute right-2 z-30 w-11 h-11 rounded-full border-2 border-gray-200"
+                            src="https://lh3.googleusercontent.com/a/ACg8ocIexhmmTS8LcwWo1fPGY5Fl3KXpd-JuBE_Gj56P3rUR2g=s96-c"
+                            alt="Samuel Abera avatar" />
+                        <img class="absolute right-8 z-20 w-11 h-11 rounded-full border-2 border-gray-200"
+                            src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxNHx8cHJvZmlsZXN8ZW58MHwwfHx8MTczNjUxNDE0NHww&ixlib=rb-4.0.3&q=80&w=1080"
+                            alt="Samuel Abera avatar" />
+                        <img class="absolute right-14 z-10 w-11 h-11 rounded-full border-2 border-gray-200"
+                            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxwcm9maWxlc3xlbnwwfDB8fHwxNzM2NTE0MTQ0fDA&ixlib=rb-4.0.3&q=80&w=1080"
+                            alt="Samuel Abera avatar" />
+                    </div>
+
+                    <!-- Rate -->
+                    <div class="flex gap-1 items-center justify-end text-2xl">
+                        <ion-icon class="text-yellow-500" name="star"></ion-icon>
+                        <p class="dark:text-white font-bold pr-4">5.0</p>
+                    </div>
+                </div>
+
+                <!-- Description -->
+
+                <h2 class="pl-4 text-2xl font-semibold group-hover:text-rose-600 cursor-pointer dark:text-white">Pizza Slice</h2>
+                <p class="pl-4 text-gray-800 dark:text-gray-300  mb-4">Cheese, Ham & Pineapple</p>
+                <button class="w-fit ml-4 mb-6 text-xl text-rose-700 dark:text-white font-bold py-2 px-4 dark:border dark:border-gray-500 rounded-full uppercase">Order now</button>
+            </div>
+        </div>
 </div>
     </div>
 </div>
+
+
+<section class="text-gray-700 body-font">
+  <div class="flex justify-center mt-10 text-4xl font-regular">
+    Why Us?
+  </div>
+  <div class="container px-5 py-12 mx-auto">
+    <div class="flex flex-wrap text-center justify-center">
+      <div class="p-4 md:w-1/4 sm:w-1/2">
+        <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
+          <div class="flex justify-center">
+            <img src="https://image3.jdomni.in/banner/13062021/58/97/7C/E53960D1295621EFCB5B13F335_1623567851299.png?output-format=webp" class="w-32 mb-3">
+          </div>
+          <h2 class="title-font font-regular text-2xl text-gray-900">Latest Milling Machinery</h2>
+        </div>
+      </div>
+
+      <div class="p-4 md:w-1/4 sm:w-1/2">
+        <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
+          <div class="flex justify-center">
+            <img src="https://image2.jdomni.in/banner/13062021/3E/57/E8/1D6E23DD7E12571705CAC761E7_1623567977295.png?output-format=webp" class="w-32 mb-3">
+          </div>
+          <h2 class="title-font font-regular text-2xl text-gray-900">Reasonable Rates</h2>
+        </div>
+      </div>
+
+      <div class="p-4 md:w-1/4 sm:w-1/2">
+        <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
+          <div class="flex justify-center">
+            <img src="https://image3.jdomni.in/banner/13062021/16/7E/7E/5A9920439E52EF309F27B43EEB_1623568010437.png?output-format=webp" class="w-32 mb-3">
+          </div>
+          <h2 class="title-font font-regular text-2xl text-gray-900">Time Efficiency</h2>
+        </div>
+      </div>
+
+      <div class="p-4 md:w-1/4 sm:w-1/2">
+        <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
+          <div class="flex justify-center">
+            <img src="https://image3.jdomni.in/banner/13062021/EB/99/EE/8B46027500E987A5142ECC1CE1_1623567959360.png?output-format=webp" class="w-32 mb-3">
+          </div>
+          <h2 class="title-font font-regular text-2xl text-gray-900">Expertise in Industry</h2>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
 <div class="w-full min-h-screen flex items-center ">
@@ -594,58 +679,102 @@ export default function Home(): string {
     </div>
 </div>
 
-<section class="text-gray-700 body-font">
-  <div class="flex justify-center mt-10 text-4xl font-regular">
-    Why Us?
-  </div>
-  <div class="container px-5 py-12 mx-auto">
-    <div class="flex flex-wrap text-center justify-center">
-      <div class="p-4 md:w-1/4 sm:w-1/2">
-        <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
-          <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/58/97/7C/E53960D1295621EFCB5B13F335_1623567851299.png?output-format=webp" class="w-32 mb-3">
-          </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Latest Milling Machinery</h2>
-        </div>
-      </div>
 
-      <div class="p-4 md:w-1/4 sm:w-1/2">
-        <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
-          <div class="flex justify-center">
-            <img src="https://image2.jdomni.in/banner/13062021/3E/57/E8/1D6E23DD7E12571705CAC761E7_1623567977295.png?output-format=webp" class="w-32 mb-3">
-          </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Reasonable Rates</h2>
-        </div>
-      </div>
+<section class="w-full flex bg-gray-50">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="text-center space-y-5">
+            <h2 class="text-base font-semibold text-pink-400 tracking-wide uppercase">Get started now</h2>
+            <div class="inline-flex items-end justify-center w-full text-center mx-auto">
+                <img src="https://randomuser.me/api/portraits/men/47.jpg"
+                    class="absolute transform translate-x-24 ml-6 rounded-full w-12 h-12 md:w-16 md:h-16 border-4 border-white">
+                <img src="https://randomuser.me/api/portraits/men/49.jpg"
+                    class="absolute transform -translate-x-24 -ml-6 rounded-full w-12 h-12 md:w-16 md:h-16 border-4 border-white">
+                <img src="https://randomuser.me/api/portraits/women/46.jpg"
+                    class="absolute transform -translate-x-16 rounded-full w-16 h-16 md:w-20 md:h-20 border-4 border-white">
+                <img src="https://randomuser.me/api/portraits/men/48.jpg"
+                    class="absolute transform translate-x-16 rounded-full w-16 h-16 md:w-20 md:h-20 border-4 border-white">
+                <img src="https://randomuser.me/api/portraits/women/43.jpg"
+                    class="rounded-full w-20 h-20 md:w-24 md:h-24 border-4 border-white relative">
+            </div>
+            <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Discover
+                your
+                potential
+                <span class="px-2 py-1 relative inline-block">
+                    <svg class="stroke-current bottom-0 absolute text-rose-300 -translate-x-2" viewBox="0 0 410 18"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6.4c16.8 16.8 380.8-11.2 397.6 5.602" stroke-width="12" fill="none"
+                            fill-rule="evenodd" stroke-linecap="round"></path>
+                    </svg>
+                    <span class="relative">with us</span>
+                </span>
+            </p>
 
-      <div class="p-4 md:w-1/4 sm:w-1/2">
-        <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
-          <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/16/7E/7E/5A9920439E52EF309F27B43EEB_1623568010437.png?output-format=webp" class="w-32 mb-3">
-          </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Time Efficiency</h2>
-        </div>
-      </div>
+            <p class="max-w-3xl mt-5 mx-auto text-xl text-gray-500">
+                Sign up now and experience the difference in just
+                one week
+            </p>
 
-      <div class="p-4 md:w-1/4 sm:w-1/2">
-        <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
-          <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/EB/99/EE/8B46027500E987A5142ECC1CE1_1623567959360.png?output-format=webp" class="w-32 mb-3">
-          </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Expertise in Industry</h2>
-        </div>
-      </div>
+            <div class="flex flex-col sm:flex-row space-y-2.5 sm:space-y-0 sm:space-x-2.5 items-center justify-center">
+                <!-- Sign up with Email -->
+                <a href="#" class="w-full sm:w-auto">
+                    <button type="button"
+                        class="flex items-center justify-center px-4 py-3 w-full  shadow-sm font-medium rounded-full border border-rose-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-200 transition duration-250 ease-in-out">
+                        <span class="text-base">Sign up with Email</span>
+                    </button>
+                </a>
 
+                <!-- Sign up with Google -->
+                <a href="#" class="w-full sm:w-auto sm:mt-0 mt-2 sm:ml-0 ml-2">
+                    <button type="button"
+                        class="flex items-center justify-center gap-4 px-4 py-3 w-full border border-rose-400 shadow-sm font-medium rounded-full  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-200 transition duration-250 ease-in-out">
+                        <!-- Google Logo -->
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-0.5 0 48 48" version="1.1">
+                            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Color-" transform="translate(-401.000000, -860.000000)">
+                                    <g id="Google" transform="translate(401.000000, 860.000000)">
+                                        <path
+                                            d="M9.82727273,24 C9.82727273,22.4757333 10.0804318,21.0144 10.5322727,19.6437333 L2.62345455,13.6042667 C1.08206818,16.7338667 0.213636364,20.2602667 0.213636364,24 C0.213636364,27.7365333 1.081,31.2608 2.62025,34.3882667 L10.5247955,28.3370667 C10.0772273,26.9728 9.82727273,25.5168 9.82727273,24"
+                                            id="Fill-1" fill="#FBBC05">
+
+                                        </path>
+                                        <path
+                                            d="M23.7136364,10.1333333 C27.025,10.1333333 30.0159091,11.3066667 32.3659091,13.2266667 L39.2022727,6.4 C35.0363636,2.77333333 29.6954545,0.533333333 23.7136364,0.533333333 C14.4268636,0.533333333 6.44540909,5.84426667 2.62345455,13.6042667 L10.5322727,19.6437333 C12.3545909,14.112 17.5491591,10.1333333 23.7136364,10.1333333"
+                                            id="Fill-2" fill="#EB4335">
+
+                                        </path>
+                                        <path
+                                            d="M23.7136364,37.8666667 C17.5491591,37.8666667 12.3545909,33.888 10.5322727,28.3562667 L2.62345455,34.3946667 C6.44540909,42.1557333 14.4268636,47.4666667 23.7136364,47.4666667 C29.4455,47.4666667 34.9177955,45.4314667 39.0249545,41.6181333 L31.5177727,35.8144 C29.3995682,37.1488 26.7323182,37.8666667 23.7136364,37.8666667"
+                                            id="Fill-3" fill="#34A853">
+
+                                        </path>
+                                        <path
+                                            d="M46.1454545,24 C46.1454545,22.6133333 45.9318182,21.12 45.6113636,19.7333333 L23.7136364,19.7333333 L23.7136364,28.8 L36.3181818,28.8 C35.6879545,31.8912 33.9724545,34.2677333 31.5177727,35.8144 L39.0249545,41.6181333 C43.3393409,37.6138667 46.1454545,31.6490667 46.1454545,24"
+                                            id="Fill-4" fill="#4285F4">
+
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="text-base">Sign up with Google</span>
+                    </button>
+                </a>
+            </div>
+
+        </div>
     </div>
-  </div>
 </section>
+
+
+
 
 
 <!-- Icons -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-
-
-    `;
+   
+  `;
+  return div;
 }

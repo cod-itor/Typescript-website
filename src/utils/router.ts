@@ -1,33 +1,40 @@
-import Home from "../pages/Home.js";
-import Products from "../pages/Product.js"; 
-import About from "../pages/About-me.js";   
-import Navbar from "../component/navbar.js";
-import Footer from "../component/footer.js";
+import { Home } from "../pages/Home";
+import Products from "../pages/Product";
+import About from "../pages/About-me";
+import { createLayout } from "./layout";
 
-export default function Router(): void {
-    const route = window.location.hash.replace("#", "") || "home";
-    const app = document.getElementById("app");
-    if (!app) return; 
-    let pageContent = "";
-    switch (route) {
-        case "home":
-            pageContent = Home();
+export function initRouter(): void {
+    window.addEventListener('popstate', renderRoute);
+
+    document.addEventListener('click', e => {
+        const target = (e.target as HTMLElement).closest('a[data-link]');
+        if (target) {
+            e.preventDefault();
+            const href = target.getAttribute('href')!;
+            history.pushState(null, '', href);
+            renderRoute();
+        }
+    });
+
+    renderRoute();
+}
+
+function renderRoute(): void {
+    const path = window.location.pathname;
+    let contentFn: () => HTMLElement;
+
+    switch (path) {
+        case '/':
+            contentFn = Home;
             break;
-        case "products":
-            pageContent = Products();
+        case '/products':
+            contentFn = Products;
             break;
-        case "about":
-            pageContent = About();
+        case '/about':
+            contentFn = About;
             break;
         default:
-            pageContent = Home();
-            break;
+            contentFn = Home;
     }
-    app!.innerHTML = `
-    ${Navbar()} 
-    <main>
-        ${pageContent}
-      </main>
-    ${Footer()}
-  `;
+    createLayout(contentFn);
 }

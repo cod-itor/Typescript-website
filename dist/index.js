@@ -1,3 +1,4 @@
-import router from './utils/router.js';
-window.addEventListener('DOMContentLoaded', router);
-window.addEventListener('hashchange', router);
+import { initRouter } from "./utils/router";
+document.addEventListener("DOMContentLoaded", () => {
+    initRouter();
+});

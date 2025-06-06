@@ -1,6 +1,7 @@
 export default function Product() {
-    return `
-        <<!-- ABOUT Section -->
+    const div = document.createElement('div');
+    div.innerHTML = `
+    <<!-- ABOUT Section -->
 <div class="w-full lg:h-screen h-full m-auto flex items-center justify-cetner py-20  ">
     <div class="w-full h-full flex flex-col justify-center items-center sm:px-4 px-2">
         <!--  -->
@@ -219,5 +220,6 @@ export default function Product() {
     </div>
   </div>
 </section>  
-    `;
+`;
+    return div;
 }

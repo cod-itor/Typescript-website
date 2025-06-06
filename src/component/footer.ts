@@ -1,6 +1,8 @@
-export default function Footer(): string {
-  return `
-    <div class="bg-gray-100">
+export function Footer(): HTMLElement {
+    const footer = document.createElement('footer');
+    footer.className = 'bg-gray-800 text-white py-6';
+    footer.innerHTML = `
+        <div class="bg-gray-100">
     <div class="max-w-screen-lg px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto">
         <div class="p-5">
             <h3 class="font-bold text-xl text-indigo-600">Company Name</h3>
@@ -126,7 +128,7 @@ export default function Footer(): string {
     </div>
 </div>
 
-
-`;
-
+<!-- Credit: Componentity.com -->
+    `;
+    return footer;
 }

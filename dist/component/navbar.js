@@ -1,6 +1,8 @@
 export default function Navbar() {
-    return `
-     <!-- Header Section -->
+    const navbar = document.createElement('nav');
+    navbar.className = 'text-white';
+    navbar.innerHTML = `
+   <!-- Header Section -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
             <div class="flex items-center justify-between">
                 <!-- Logo Section -->
@@ -10,9 +12,9 @@ export default function Navbar() {
 
                 <!-- Navigation Menu -->
                 <nav class="hidden md:flex space-x-10 text-lg">
-                    <a href="#home" data-link class="hover:text-gray-300 transition-all">Home</a>
-                    <a href="#products" data-link class="hover:text-gray-300 transition-all">Product</a>
-                    <a href="#about" data-link class="hover:text-gray-300 transition-all">About</a>
+                    <a href="home" data-link class="hover:text-gray-300 transition-all">Home</a>
+                    <a href="products" data-link class="hover:text-gray-300 transition-all">Product</a>
+                    <a href="about" data-link class="hover:text-gray-300 transition-all">About</a>
                 </nav>
 
                 <!-- Call-to-Action Button -->
@@ -32,6 +34,13 @@ export default function Navbar() {
                 </div>
             </div>
         </div>
-
   `;
+    const menuButton = navbar.querySelector('#menu-button');
+    const mobileMenu = navbar.querySelector('#mobile-menu');
+    if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+    return navbar;
 }

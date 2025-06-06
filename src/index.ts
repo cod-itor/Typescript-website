@@ -1,6 +1,5 @@
-import router from './utils/router.js';
-// import { onToggleMenu } from './component/navbar-toggle';
+import { initRouter } from "./utils/router";
 
-// (window as any).onToggleMenu = onToggleMenu;
-window.addEventListener('DOMContentLoaded', router);
-window.addEventListener('hashchange', router);
+document.addEventListener("DOMContentLoaded", () => {
+    initRouter();
+});
