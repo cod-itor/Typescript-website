@@ -1,28 +1,38 @@
 
 export default function Navbar(): string {
   return `
-    <header class="bg-gradient-to-l from-[#603813] to-[#b29f94]">
-        <nav class="flex justify-between items-center w-[92%]  mx-auto">
-            <div>
-                <img class="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="...">
+     <!-- Header Section -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+            <div class="flex items-center justify-between">
+                <!-- Logo Section -->
+                <div class="flex-shrink-0">
+                    <a href="/" class="text-2xl font-bold">FOODIE </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="hidden md:flex space-x-10 text-lg">
+                    <a href="#home" data-link class="hover:text-gray-300 transition-all">Home</a>
+                    <a href="#products" data-link class="hover:text-gray-300 transition-all">Product</a>
+                    <a href="#about" data-link class="hover:text-gray-300 transition-all">About</a>
+                </nav>
+
+                <!-- Call-to-Action Button -->
+                <div class="hidden md:block">
+                    <a href="#about" class="bg-yellow-500 hover:bg-yellow-400 text-black py-2 px-6 rounded-full text-lg transition-all">
+                        Get in Touch
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button (for smaller screens) -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-button" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div
-                class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-                    <li>
-                        <a class="hover:text-gray-500" href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#products">Product</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#about">About</a>
-                </ul>
-            </div>
-            <div class="flex items-center gap-6">
-                <button class="bg-[#603813] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button>
-                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
-            </div>
-    </header>
+        </div>
+
   `;
 }

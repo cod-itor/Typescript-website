@@ -2,6 +2,7 @@ import Home from "../pages/Home.js";
 import Products from "../pages/Product.js"; 
 import About from "../pages/About-me.js";   
 import Navbar from "../component/navbar.js";
+import Footer from "../component/footer.js";
 
 export default function Router(): void {
     const route = window.location.hash.replace("#", "") || "home";
@@ -27,5 +28,6 @@ export default function Router(): void {
     <main>
         ${pageContent}
       </main>
+    ${Footer()}
   `;
 }
