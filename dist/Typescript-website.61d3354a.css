@@ -78,8 +78,6 @@
     --color-green-600: oklch(62.7% .194 149.214);
     --color-green-700: oklch(52.7% .154 150.069);
     --color-teal-600: oklch(60% .118 184.704);
-    --color-blue-500: oklch(62.3% .214 259.815);
-    --color-blue-600: oklch(54.6% .245 262.881);
     --color-indigo-600: oklch(51.1% .262 276.966);
     --color-rose-100: oklch(94.1% .03 12.58);
     --color-rose-200: oklch(89.2% .058 10.001);
@@ -133,7 +131,6 @@
     --tracking-tight: -.025em;
     --tracking-wide: .025em;
     --radius-sm: .25rem;
-    --radius-md: .375rem;
     --radius-lg: .5rem;
     --radius-xl: .75rem;
     --radius-2xl: 1rem;

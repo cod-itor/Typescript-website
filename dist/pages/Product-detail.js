@@ -82,12 +82,25 @@ function productDetail() {
       </div>
     `;
     }
+    function getProductIdFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+        return id ? parseInt(id, 10) : null;
+    }
     renderSkeletonDetail();
     (() => __awaiter(this, void 0, void 0, function* () {
         try {
             const products = yield fetchProducts();
-            if (products.length > 0) {
-                renderProductDetail(products[0]);
+            const productId = getProductIdFromUrl();
+            let product;
+            if (productId !== null) {
+                product = products.find((p) => p.id === productId);
+            }
+            if (!product && products.length > 0) {
+                product = products[0];
+            }
+            if (product) {
+                renderProductDetail(product);
             }
             else {
                 div.innerHTML =

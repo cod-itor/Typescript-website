@@ -1601,7 +1601,7 @@ function product() {
         class="group w-72 h-[28rem] mt-10 bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex flex-col"
         style="min-width: 18rem; max-width: 18rem;"
       >
-        <a href="/products-detail"><img
+        <a href="/products-detail?id=${product.id}" data-link><img
           class="w-full h-44 object-cover"
           src="${product.image}"
           alt="${product.name}"
@@ -1617,7 +1617,7 @@ function product() {
         </div>
         <span class="text-xs text-gray-500 dark:text-gray-400">${product.difficulty}</span>
           </div>
-          <a href="products-detail"><button
+          <a href="/products-detail?id=${product.id}" data-link><button
         class="w-full py-2 border border-rose-600 dark:border-gray-500 text-rose-700 dark:text-white rounded-full uppercase font-bold transition duration-300 hover:bg-rose-600 hover:text-white dark:hover:bg-white hover:cursor-pointer dark:hover:text-black text-sm"
           >
        Read More
@@ -2201,11 +2201,20 @@ function productDetail() {
       </div>
     `;
     }
+    function getProductIdFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+        return id ? parseInt(id, 10) : null;
+    }
     renderSkeletonDetail();
     (()=>__awaiter(this, void 0, void 0, function*() {
             try {
                 const products = yield fetchProducts();
-                if (products.length > 0) renderProductDetail(products[0]);
+                const productId = getProductIdFromUrl();
+                let product;
+                if (productId !== null) product = products.find((p)=>p.id === productId);
+                if (!product && products.length > 0) product = products[0];
+                if (product) renderProductDetail(product);
                 else div.innerHTML = '<p class="text-center text-red-500">No product found.</p>';
             } catch (error) {
                 div.innerHTML = '<p class="text-center text-red-500">Failed to load product details.</p>';

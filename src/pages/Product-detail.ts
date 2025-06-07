@@ -88,14 +88,29 @@ export default function productDetail(): HTMLElement {
     `;
   }
 
+  // Helper to get product ID from URL
+  function getProductIdFromUrl(): number | null {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+    return id ? parseInt(id, 10) : null;
+  }
+
   // Show skeleton while loading
   renderSkeletonDetail();
 
   (async () => {
     try {
       const products = await fetchProducts();
-      if (products.length > 0) {
-        renderProductDetail(products[0]); // Show first product for now
+      const productId = getProductIdFromUrl();
+      let product: Products | undefined;
+      if (productId !== null) {
+        product = products.find((p) => p.id === productId);
+      }
+      if (!product && products.length > 0) {
+        product = products[0]; // fallback
+      }
+      if (product) {
+        renderProductDetail(product);
       } else {
         div.innerHTML =
           '<p class="text-center text-red-500">No product found.</p>';
