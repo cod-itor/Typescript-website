@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Footer = Footer;
 function Footer() {
     const footer = document.createElement('footer');
-    footer.className = 'bg-gray-800 text-white py-6';
     footer.innerHTML = `
         <div class="bg-gray-100">
     <div class="max-w-screen-lg px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto">

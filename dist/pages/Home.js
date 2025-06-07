@@ -683,7 +683,7 @@ function Home() {
 </div>
 
 
-<section class="w-full flex bg-gray-50">
+<section class="w-full flex">
     <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div class="text-center space-y-5">
             <h2 class="text-base font-semibold text-pink-400 tracking-wide uppercase">Get started now</h2>
