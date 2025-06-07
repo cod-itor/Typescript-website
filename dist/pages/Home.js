@@ -7,24 +7,24 @@ function Home() {
   <section>
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
-            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Payments tool for software companies</h1>
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">EAT MORE GAIN MORE. NEVER STOP EATING</h1>
             <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</p>
-            <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                Get started
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-grey-700 hover:bg-grey-800 focus:ring-4 focus:ring-grey-300 dark:focus:ring-primary-900">
+                FOODIE HERE
                 <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
             <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                Speak to Sales
+               ENJOY FOOD
             </a> 
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
+            <img src="https://pngimg.com/d/burger_sandwich_PNG4135.png" alt="mockup">
         </div>                
     </div>
 </section>
 
 
-<div class="w-full h-full]">
+<div class="w-full h-full bg-gray-100 dark:bg-[#1a1a1a]">
 
     <div class="w-full h-full flex flex-col justify-center items-center py-10">
         <!-- Title -->
@@ -186,7 +186,7 @@ function Home() {
 </div>
 
 
-<section class="text-gray-700 body-font">
+<section class="text-white body-font">
   <div class="flex justify-center mt-10 text-4xl font-regular">
     Why Us?
   </div>
@@ -195,25 +195,25 @@ function Home() {
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/58/97/7C/E53960D1295621EFCB5B13F335_1623567851299.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/5235/5235253.png" class="w-32 mb-3">
           </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Latest Milling Machinery</h2>
+          <h2 class="title-font font-regular text-2xl text-gray-900">Latest FOOD INFORMATION</h2>
         </div>
       </div>
 
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image2.jdomni.in/banner/13062021/3E/57/E8/1D6E23DD7E12571705CAC761E7_1623567977295.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/10366/10366416.png     " class="w-32 mb-3">
           </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Reasonable Rates</h2>
+          <h2 class="title-font font-regular text-2xl text-gray-900">Reasonable Price</h2>
         </div>
       </div>
 
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/16/7E/7E/5A9920439E52EF309F27B43EEB_1623568010437.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/3703/3703377.png" class="w-32 mb-3">
           </div>
           <h2 class="title-font font-regular text-2xl text-gray-900">Time Efficiency</h2>
         </div>
@@ -222,7 +222,7 @@ function Home() {
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/EB/99/EE/8B46027500E987A5142ECC1CE1_1623567959360.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/3570/3570168.png" class="w-32 mb-3">
           </div>
           <h2 class="title-font font-regular text-2xl text-gray-900">Expertise in Industry</h2>
         </div>
@@ -234,10 +234,10 @@ function Home() {
 
 
 
-<div class="w-full min-h-screen flex items-center ">
+<div class="w-full min-h-screen flex items-center">
     <div class="max-w-full py-5 mt-10 mb-20 mx-auto overflow-hidden">
         <div class="w-full flex items-center flex-col gap-1 justify-center mb-16 px-4">
-            <p class="text-sm sm:text-lg font-semibold text-rose-600">Words That Matter</p>
+            <p class="text-sm sm:text-lg font-semibold text-red-700">Words That Matter</p>
             <h3 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-semibold">See Why Clients Keep Coming
                 Back</h3>
         </div>
@@ -686,7 +686,7 @@ function Home() {
 <section class="w-full flex">
     <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div class="text-center space-y-5">
-            <h2 class="text-base font-semibold text-pink-400 tracking-wide uppercase">Get started now</h2>
+            <h2 class="text-base font-semibold text-red-800 tracking-wide uppercase">SEE WHO YOU'RE HERE WITH</h2>
             <div class="inline-flex items-end justify-center w-full text-center mx-auto">
                 <img src="https://randomuser.me/api/portraits/men/47.jpg"
                     class="absolute transform translate-x-24 ml-6 rounded-full w-12 h-12 md:w-16 md:h-16 border-4 border-white">
@@ -701,7 +701,7 @@ function Home() {
             </div>
             <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Discover
                 your
-                potential
+                FOODIE
                 <span class="px-2 py-1 relative inline-block">
                     <svg class="stroke-current bottom-0 absolute text-rose-300 -translate-x-2" viewBox="0 0 410 18"
                         xmlns="http://www.w3.org/2000/svg">
@@ -712,9 +712,8 @@ function Home() {
                 </span>
             </p>
 
-            <p class="max-w-3xl mt-5 mx-auto text-xl text-gray-500">
-                Sign up now and experience the difference in just
-                one week
+            <p class="max-w-3xl mt-5 mx-auto text-xl text-gray-100">
+                NO NEED TO SIGN UP, JUST START EXPLORING! CONNECT US WITH YOUR FAVORITE FOOD PLACES AND
             </p>
 
             <div class="flex flex-col sm:flex-row space-y-2.5 sm:space-y-0 sm:space-x-2.5 items-center justify-center">
@@ -722,7 +721,7 @@ function Home() {
                 <a href="#" class="w-full sm:w-auto">
                     <button type="button"
                         class="flex items-center justify-center px-4 py-3 w-full  shadow-sm font-medium rounded-full border border-rose-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-200 transition duration-250 ease-in-out">
-                        <span class="text-base">Sign up with Email</span>
+                        <span class="text-base"> Email</span>
                     </button>
                 </a>
 
@@ -760,7 +759,7 @@ function Home() {
                                 </g>
                             </g>
                         </svg>
-                        <span class="text-base">Sign up with Google</span>
+                        <span class="text-base"> Google</span>
                     </button>
                 </a>
             </div>

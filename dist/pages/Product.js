@@ -29,7 +29,33 @@ function product() {
             }
         });
     }
-    div.innerHTML = `<p>Loading services...</p>`;
+    function renderSkeletonCards(count) {
+        div.innerHTML = "";
+        const grid = document.createElement("div");
+        grid.className =
+            "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center mx-auto max-w-7xl";
+        for (let i = 0; i < count; i++) {
+            const skeleton = document.createElement("div");
+            skeleton.innerHTML = `
+      <div class="group w-72 h-[28rem] mt-10 bg-gray-200 dark:bg-[#333] rounded-2xl overflow-hidden shadow-lg animate-pulse flex flex-col" style="min-width: 18rem; max-width: 18rem;">
+        <div class="w-full h-44 bg-gray-300 dark:bg-[#444]"></div>
+        <div class="p-5 flex flex-col flex-1">
+          <div class="h-6 bg-gray-300 dark:bg-[#444] rounded mb-2 w-3/4"></div>
+          <div class="h-4 bg-gray-300 dark:bg-[#444] rounded mb-2 w-full"></div>
+          <div class="h-3 bg-gray-300 dark:bg-[#444] rounded mb-3 w-5/6"></div>
+          <div class="flex justify-between items-center mb-3 mt-auto">
+            <div class="h-5 w-16 bg-gray-300 dark:bg-[#444] rounded"></div>
+            <div class="h-4 w-10 bg-gray-300 dark:bg-[#444] rounded"></div>
+          </div>
+          <div class="w-full h-9 bg-gray-300 dark:bg-[#444] rounded-full"></div>
+        </div>
+      </div>
+      `;
+            grid.appendChild(skeleton);
+        }
+        div.appendChild(grid);
+    }
+    renderSkeletonCards(8);
     function renderCards(products) {
         console.log("Rendering products:", products);
         div.innerHTML = "";
@@ -41,7 +67,7 @@ function product() {
             const card = document.createElement("div");
             card.innerHTML = `
       <div
-        class="group w-72 h-[28rem] bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex flex-col"
+        class="group w-72 h-[28rem] mt-10 bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex flex-col"
         style="min-width: 18rem; max-width: 18rem;"
       >
         <img

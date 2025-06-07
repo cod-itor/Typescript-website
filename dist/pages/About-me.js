@@ -22,23 +22,17 @@ function Product() {
                 <!-- Main Img -->
                 <img
             class="rounded-full relative object-cover right-0 lg:w-[30rem] lg:h-[30rem] sm:w-[25rem] sm:h-[25rem] w-[12rem] h-[12rem] outline sm:outline-offset-[.77em] outline-offset-[.37em] outline-green-500"
-            src="https://images.unsplash.com/photo-1507290439931-a861b5a38200?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxM3x8Zmxvd2VyfGVufDB8MHx8fDE3MjA5NDk0NjB8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="About us" />
+            src="https://scontent.fpnh18-3.fna.fbcdn.net/v/t39.30808-6/484652988_122144684090560693_2172052087771136430_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeG-o-gCTIovA-k1WayVwrWdKczg-wZTKKkpzOD7BlMoqa9Nd2ES6Uj7zFIDHUGiH18qj4ll4WxKQA27d_yzBQ-F&_nc_ohc=BIZBaxDRCuUQ7kNvwFdURGA&_nc_oc=AdktoU9cVv175IQgz_-ZVuv6aRqfZsWgld001cYet4wvvpSinwzQ3ik2g0y1ZE_9y7U&_nc_zt=23&_nc_ht=scontent.fpnh18-3.fna&_nc_gid=fTH9toD7RUO5JFkw-12GyQ&oh=00_AfMOhRZ6Rsm2J2qoG3c_kAi27vQrKrnvk1W4V7i8nu3Hhw&oe=68498FCF" alt="About RECTOR" />
             </div>
             <!--  -->
             <div
                 class="lg:w-[60%] p-4 w-full h-full shadow-xl shadow-green-300/40 flex flex-col justify-center items-center sm:px-6 px-4 rounded-xl">
                 <h2 class="text-4xl text-center text-green-600 dark:text-green-400 font-bold px-4 py-1 md:mt-0 mt-10">
-                    About Us
+                    About Rector
                 </h2>
-                <p class="md:text-3xl text-2xl text-center text-gray-800 dark:text-gray-200 font-bold my-5">We are
-                    Petal Haven S.C.
+                <p class="md:text-3xl text-2xl text-center text-gray-800 dark:text-gray-200 font-bold my-5">RECTOR FROM CAMBODIA
                 </p>
-                <p class="md:text-xl sm:text-lg text-base mt-2 text-justify sm:px-2 dark:text-gray-300">At Petal Haven,
-                    we believe in the transformative power of flowers. Our blooms are not just arrangements; they are
-                    expressions of beauty, joy, and emotion. From elegant bouquets to enchanting floral designs, we
-                    curate every creation with precision and care. Whether it's a celebration, a gesture of love, or a
-                    moment of solace, Petal Haven's exquisite flowers speak a language of their own, bringing nature's
-                    beauty to your doorstep. Experience the enchantment of Petal Haven and let flowers tell your story.
+                <p class="md:text-xl sm:text-lg text-base mt-2 text-justify sm:px-2 dark:text-gray-300">Rector is a computer science major with a strong passion for financial management and personal growth. He’s disciplined, ambitious, and constantly striving to improve in both academics and life.Much more than that is he always look at thing in a positive way and always looking to create a new dent in the society. This is a journet i wish i could see years from now when i get older let's hope thing will work out the prefected way and moving toward greatness
                 </p>
 
                 <!-- button -->
@@ -50,45 +44,45 @@ function Product() {
     </div>
 </div>
 
-<section class="text-gray-700 body-font">
+<section class="text-white body-font">
   <div class="flex justify-center mt-10 text-4xl font-regular">
-    Why Us?
+    TRYING TO BECOME A FULLSTACK DEVELOPER
   </div>
   <div class="container px-5 py-12 mx-auto">
     <div class="flex flex-wrap text-center justify-center">
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/58/97/7C/E53960D1295621EFCB5B13F335_1623567851299.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/desenvolvedor-front-end-7464456-6109659.png" class="w-32 mb-3">
           </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Latest Milling Machinery</h2>
+          <h2 class="title-font font-regular text-2xl text-gray-900">FRONT-END</h2>
         </div>
       </div>
 
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image2.jdomni.in/banner/13062021/3E/57/E8/1D6E23DD7E12571705CAC761E7_1623567977295.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/back-end-developer-illustration-download-in-svg-png-gif-file-formats--front-web-development-programming-internet-of-things-pack-people-illustrations-3611968.png" class="w-32 mb-3">
           </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Reasonable Rates</h2>
+          <h2 class="title-font font-regular text-2xl text-gray-900">BACK-END</h2>
         </div>
       </div>
 
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/16/7E/7E/5A9920439E52EF309F27B43EEB_1623568010437.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdn-icons-png.freepik.com/256/18254/18254843.png?semt=ais_hybrid" class="w-32 mb-3">
           </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Time Efficiency</h2>
+          <h2 class="title-font font-regular text-2xl text-gray-900">DISCIPLINE</h2>
         </div>
       </div>
 
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/EB/99/EE/8B46027500E987A5142ECC1CE1_1623567959360.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/4371/4371468.png" class="w-32 mb-3">
           </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Expertise in Industry</h2>
+          <h2 class="title-font font-regular text-2xl text-gray-900">CONSISTENTCY</h2>
         </div>
       </div>
 
@@ -97,7 +91,7 @@ function Product() {
 </section>
 
 <section id="CallMe" class="relative py-14 mt-[100px]">
-  <div class="z-10 absolute opacity-90 rounded-full blur-[200px] w-[40%] h-[40%] bg-blue-600 top-[200px] ml-[20%]">
+  <div class="z-10 absolute opacity-90 rounded-full blur-[200px] w-[40%] h-[40%] bg-white top-black ml-[20%]">
   </div>
   <div id="GET IN TOUCH"
     class="flex  select-auto mx-auto items-center justify-center gap-3 sm:pb-1 w-[210px] sm:w-[410px] border-b-4 sm:border-b-8 border-[#38B7FF] border-primary font-black">
@@ -107,7 +101,7 @@ function Product() {
         d="M21.4286 0C15.5134 0 10.7143 4.74792 10.7143 10.6C10.7143 16.4521 15.5134 21.2 21.4286 21.2C27.3437 21.2 32.1429 16.4521 32.1429 10.6C32.1429 4.74792 27.3437 0 21.4286 0ZM16.0714 24.7333C7.17076 24.7333 0 31.8276 0 40.6333V42.4C0 46.3198 3.1808 49.4667 7.14286 49.4667H28.5714V45.9333H17.8571V31.8H28.5714V24.8299C27.9855 24.7609 27.3856 24.7333 26.7857 24.7333H16.0714ZM32.1429 24.7333V35.3333H21.4286V42.4H32.1429V53H39.2857V42.4H50V35.3333H39.2857V24.7333H32.1429Z"
         fill="#38B7FF"></path>
     </svg>
-    <h2 class="text-white text-2xl sm:text-[48px]">GET IN TOUCH</h2>
+    <h2 class="text-white text-2xl sm:text-[48px]">CONNECTION </h2>
   </div>
   <div class="z-20 relative px-5 mt-20 md:mt-24 flex flex-wrap gap-7 justify-center lg:max-w-[800px] mx-auto ">
     <div
@@ -132,7 +126,7 @@ function Product() {
       </svg>
       <h3 class="text-base capitalize  font-black text-white sm:text-[28px]">whatsapp</h3>
       <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank"
-          href="https://wa.me/123456789">+123456789</a></p>
+          href="https://wa.me/123456789">+85512559997</a></p>
     </div>
     <div
       class="w-[100px] hover:scale-[1.1] h-[125px] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
@@ -153,7 +147,7 @@ function Product() {
       </svg>
       <h3 class="text-base capitalize  font-black text-white sm:text-[28px]">telegram</h3>
       <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank"
-          href="https://t.me/username">UserName</a></p>
+          href="https://t.me/username">Dita Rector</a></p>
     </div>
     <div
       class="w-[100px] hover:scale-[1.1] h-[125px] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
@@ -167,8 +161,8 @@ function Product() {
           fill="#38B7FF"></path>
       </svg>
       <h3 class="text-base capitalize  font-black text-white sm:text-[28px]">location</h3>
-      <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank" href="location">Syria
-          Aleppo</a></p>
+      <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank" href="location">PLACES
+          </a></p>
     </div>
     <div
       class="w-[100px] hover:scale-[1.1] h-[125px] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
@@ -189,7 +183,7 @@ function Product() {
       </svg>
       <h3 class="text-base capitalize  font-black text-white sm:text-[28px]">linkedin</h3>
       <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank"
-          href="https://www.linkedin.com/in/abdulbasit-abdulgani">Abdulbasit</a></p>
+          href="https://www.linkedin.com/in/abdulbasit-abdulgani">Dita Rector</a></p>
     </div>
     <div
       class="w-[100px] hover:scale-[1.1] h-[125px] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
@@ -201,7 +195,7 @@ function Product() {
       </svg>
       <h3 class="text-base capitalize  font-black text-white sm:text-[28px]">github</h3>
       <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank"
-          href="https://github.com/3bd0sy">@3bd0sy</a></p>
+          href="https://github.com/3bd0sy">@cod-itor</a></p>
     </div>
     <div
       class="w-[100px] hover:scale-[1.1] h-[125px] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
@@ -219,7 +213,7 @@ function Product() {
       </svg>
       <h3 class="text-base capitalize  font-black text-white sm:text-[28px]">email</h3>
       <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank"
-          href="mailto:ax.abdo.syrain@gmail.com">Email me</a></p>
+          href="mailto:ax.abdo.syrain@gmail.com">Rectordita</a></p>
     </div>
   </div>
 </section>  

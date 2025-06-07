@@ -735,24 +735,24 @@ function Home() {
   <section>
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
-            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Payments tool for software companies</h1>
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">EAT MORE GAIN MORE. NEVER STOP EATING</h1>
             <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</p>
-            <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                Get started
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-grey-700 hover:bg-grey-800 focus:ring-4 focus:ring-grey-300 dark:focus:ring-primary-900">
+                FOODIE HERE
                 <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
             <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                Speak to Sales
+               ENJOY FOOD
             </a> 
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
+            <img src="https://pngimg.com/d/burger_sandwich_PNG4135.png" alt="mockup">
         </div>                
     </div>
 </section>
 
 
-<div class="w-full h-full]">
+<div class="w-full h-full bg-gray-100 dark:bg-[#1a1a1a]">
 
     <div class="w-full h-full flex flex-col justify-center items-center py-10">
         <!-- Title -->
@@ -914,7 +914,7 @@ function Home() {
 </div>
 
 
-<section class="text-gray-700 body-font">
+<section class="text-white body-font">
   <div class="flex justify-center mt-10 text-4xl font-regular">
     Why Us?
   </div>
@@ -923,25 +923,25 @@ function Home() {
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/58/97/7C/E53960D1295621EFCB5B13F335_1623567851299.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/5235/5235253.png" class="w-32 mb-3">
           </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Latest Milling Machinery</h2>
+          <h2 class="title-font font-regular text-2xl text-gray-900">Latest FOOD INFORMATION</h2>
         </div>
       </div>
 
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image2.jdomni.in/banner/13062021/3E/57/E8/1D6E23DD7E12571705CAC761E7_1623567977295.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/10366/10366416.png     " class="w-32 mb-3">
           </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Reasonable Rates</h2>
+          <h2 class="title-font font-regular text-2xl text-gray-900">Reasonable Price</h2>
         </div>
       </div>
 
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/16/7E/7E/5A9920439E52EF309F27B43EEB_1623568010437.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/3703/3703377.png" class="w-32 mb-3">
           </div>
           <h2 class="title-font font-regular text-2xl text-gray-900">Time Efficiency</h2>
         </div>
@@ -950,7 +950,7 @@ function Home() {
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/EB/99/EE/8B46027500E987A5142ECC1CE1_1623567959360.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/3570/3570168.png" class="w-32 mb-3">
           </div>
           <h2 class="title-font font-regular text-2xl text-gray-900">Expertise in Industry</h2>
         </div>
@@ -962,10 +962,10 @@ function Home() {
 
 
 
-<div class="w-full min-h-screen flex items-center ">
+<div class="w-full min-h-screen flex items-center">
     <div class="max-w-full py-5 mt-10 mb-20 mx-auto overflow-hidden">
         <div class="w-full flex items-center flex-col gap-1 justify-center mb-16 px-4">
-            <p class="text-sm sm:text-lg font-semibold text-rose-600">Words That Matter</p>
+            <p class="text-sm sm:text-lg font-semibold text-red-700">Words That Matter</p>
             <h3 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-semibold">See Why Clients Keep Coming
                 Back</h3>
         </div>
@@ -1414,7 +1414,7 @@ function Home() {
 <section class="w-full flex">
     <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div class="text-center space-y-5">
-            <h2 class="text-base font-semibold text-pink-400 tracking-wide uppercase">Get started now</h2>
+            <h2 class="text-base font-semibold text-red-800 tracking-wide uppercase">SEE WHO YOU'RE HERE WITH</h2>
             <div class="inline-flex items-end justify-center w-full text-center mx-auto">
                 <img src="https://randomuser.me/api/portraits/men/47.jpg"
                     class="absolute transform translate-x-24 ml-6 rounded-full w-12 h-12 md:w-16 md:h-16 border-4 border-white">
@@ -1429,7 +1429,7 @@ function Home() {
             </div>
             <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Discover
                 your
-                potential
+                FOODIE
                 <span class="px-2 py-1 relative inline-block">
                     <svg class="stroke-current bottom-0 absolute text-rose-300 -translate-x-2" viewBox="0 0 410 18"
                         xmlns="http://www.w3.org/2000/svg">
@@ -1440,9 +1440,8 @@ function Home() {
                 </span>
             </p>
 
-            <p class="max-w-3xl mt-5 mx-auto text-xl text-gray-500">
-                Sign up now and experience the difference in just
-                one week
+            <p class="max-w-3xl mt-5 mx-auto text-xl text-gray-100">
+                NO NEED TO SIGN UP, JUST START EXPLORING! CONNECT US WITH YOUR FAVORITE FOOD PLACES AND
             </p>
 
             <div class="flex flex-col sm:flex-row space-y-2.5 sm:space-y-0 sm:space-x-2.5 items-center justify-center">
@@ -1450,7 +1449,7 @@ function Home() {
                 <a href="#" class="w-full sm:w-auto">
                     <button type="button"
                         class="flex items-center justify-center px-4 py-3 w-full  shadow-sm font-medium rounded-full border border-rose-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-200 transition duration-250 ease-in-out">
-                        <span class="text-base">Sign up with Email</span>
+                        <span class="text-base"> Email</span>
                     </button>
                 </a>
 
@@ -1488,7 +1487,7 @@ function Home() {
                                 </g>
                             </g>
                         </svg>
-                        <span class="text-base">Sign up with Google</span>
+                        <span class="text-base"> Google</span>
                     </button>
                 </a>
             </div>
@@ -1559,7 +1558,32 @@ function product() {
             }
         });
     }
-    div.innerHTML = `<p>Loading services...</p>`;
+    function renderSkeletonCards(count) {
+        div.innerHTML = "";
+        const grid = document.createElement("div");
+        grid.className = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center mx-auto max-w-7xl";
+        for(let i = 0; i < count; i++){
+            const skeleton = document.createElement("div");
+            skeleton.innerHTML = `
+      <div class="group w-72 h-[28rem] mt-10 bg-gray-200 dark:bg-[#333] rounded-2xl overflow-hidden shadow-lg animate-pulse flex flex-col" style="min-width: 18rem; max-width: 18rem;">
+        <div class="w-full h-44 bg-gray-300 dark:bg-[#444]"></div>
+        <div class="p-5 flex flex-col flex-1">
+          <div class="h-6 bg-gray-300 dark:bg-[#444] rounded mb-2 w-3/4"></div>
+          <div class="h-4 bg-gray-300 dark:bg-[#444] rounded mb-2 w-full"></div>
+          <div class="h-3 bg-gray-300 dark:bg-[#444] rounded mb-3 w-5/6"></div>
+          <div class="flex justify-between items-center mb-3 mt-auto">
+            <div class="h-5 w-16 bg-gray-300 dark:bg-[#444] rounded"></div>
+            <div class="h-4 w-10 bg-gray-300 dark:bg-[#444] rounded"></div>
+          </div>
+          <div class="w-full h-9 bg-gray-300 dark:bg-[#444] rounded-full"></div>
+        </div>
+      </div>
+      `;
+            grid.appendChild(skeleton);
+        }
+        div.appendChild(grid);
+    }
+    renderSkeletonCards(8);
     function renderCards(products) {
         console.log("Rendering products:", products);
         div.innerHTML = "";
@@ -1570,7 +1594,7 @@ function product() {
             const card = document.createElement("div");
             card.innerHTML = `
       <div
-        class="group w-72 h-[28rem] bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex flex-col"
+        class="group w-72 h-[28rem] mt-10 bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex flex-col"
         style="min-width: 18rem; max-width: 18rem;"
       >
         <img
@@ -1639,23 +1663,17 @@ function Product() {
                 <!-- Main Img -->
                 <img
             class="rounded-full relative object-cover right-0 lg:w-[30rem] lg:h-[30rem] sm:w-[25rem] sm:h-[25rem] w-[12rem] h-[12rem] outline sm:outline-offset-[.77em] outline-offset-[.37em] outline-green-500"
-            src="https://images.unsplash.com/photo-1507290439931-a861b5a38200?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxM3x8Zmxvd2VyfGVufDB8MHx8fDE3MjA5NDk0NjB8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="About us" />
+            src="https://scontent.fpnh18-3.fna.fbcdn.net/v/t39.30808-6/484652988_122144684090560693_2172052087771136430_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeG-o-gCTIovA-k1WayVwrWdKczg-wZTKKkpzOD7BlMoqa9Nd2ES6Uj7zFIDHUGiH18qj4ll4WxKQA27d_yzBQ-F&_nc_ohc=BIZBaxDRCuUQ7kNvwFdURGA&_nc_oc=AdktoU9cVv175IQgz_-ZVuv6aRqfZsWgld001cYet4wvvpSinwzQ3ik2g0y1ZE_9y7U&_nc_zt=23&_nc_ht=scontent.fpnh18-3.fna&_nc_gid=fTH9toD7RUO5JFkw-12GyQ&oh=00_AfMOhRZ6Rsm2J2qoG3c_kAi27vQrKrnvk1W4V7i8nu3Hhw&oe=68498FCF" alt="About RECTOR" />
             </div>
             <!--  -->
             <div
                 class="lg:w-[60%] p-4 w-full h-full shadow-xl shadow-green-300/40 flex flex-col justify-center items-center sm:px-6 px-4 rounded-xl">
                 <h2 class="text-4xl text-center text-green-600 dark:text-green-400 font-bold px-4 py-1 md:mt-0 mt-10">
-                    About Us
+                    About Rector
                 </h2>
-                <p class="md:text-3xl text-2xl text-center text-gray-800 dark:text-gray-200 font-bold my-5">We are
-                    Petal Haven S.C.
+                <p class="md:text-3xl text-2xl text-center text-gray-800 dark:text-gray-200 font-bold my-5">RECTOR FROM CAMBODIA
                 </p>
-                <p class="md:text-xl sm:text-lg text-base mt-2 text-justify sm:px-2 dark:text-gray-300">At Petal Haven,
-                    we believe in the transformative power of flowers. Our blooms are not just arrangements; they are
-                    expressions of beauty, joy, and emotion. From elegant bouquets to enchanting floral designs, we
-                    curate every creation with precision and care. Whether it's a celebration, a gesture of love, or a
-                    moment of solace, Petal Haven's exquisite flowers speak a language of their own, bringing nature's
-                    beauty to your doorstep. Experience the enchantment of Petal Haven and let flowers tell your story.
+                <p class="md:text-xl sm:text-lg text-base mt-2 text-justify sm:px-2 dark:text-gray-300">Rector is a computer science major with a strong passion for financial management and personal growth. He\u{2019}s disciplined, ambitious, and constantly striving to improve in both academics and life.Much more than that is he always look at thing in a positive way and always looking to create a new dent in the society. This is a journet i wish i could see years from now when i get older let's hope thing will work out the prefected way and moving toward greatness
                 </p>
 
                 <!-- button -->
@@ -1667,45 +1685,45 @@ function Product() {
     </div>
 </div>
 
-<section class="text-gray-700 body-font">
+<section class="text-white body-font">
   <div class="flex justify-center mt-10 text-4xl font-regular">
-    Why Us?
+    TRYING TO BECOME A FULLSTACK DEVELOPER
   </div>
   <div class="container px-5 py-12 mx-auto">
     <div class="flex flex-wrap text-center justify-center">
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/58/97/7C/E53960D1295621EFCB5B13F335_1623567851299.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/desenvolvedor-front-end-7464456-6109659.png" class="w-32 mb-3">
           </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Latest Milling Machinery</h2>
+          <h2 class="title-font font-regular text-2xl text-gray-900">FRONT-END</h2>
         </div>
       </div>
 
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image2.jdomni.in/banner/13062021/3E/57/E8/1D6E23DD7E12571705CAC761E7_1623567977295.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/back-end-developer-illustration-download-in-svg-png-gif-file-formats--front-web-development-programming-internet-of-things-pack-people-illustrations-3611968.png" class="w-32 mb-3">
           </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Reasonable Rates</h2>
+          <h2 class="title-font font-regular text-2xl text-gray-900">BACK-END</h2>
         </div>
       </div>
 
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/16/7E/7E/5A9920439E52EF309F27B43EEB_1623568010437.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdn-icons-png.freepik.com/256/18254/18254843.png?semt=ais_hybrid" class="w-32 mb-3">
           </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Time Efficiency</h2>
+          <h2 class="title-font font-regular text-2xl text-gray-900">DISCIPLINE</h2>
         </div>
       </div>
 
       <div class="p-4 md:w-1/4 sm:w-1/2">
         <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
           <div class="flex justify-center">
-            <img src="https://image3.jdomni.in/banner/13062021/EB/99/EE/8B46027500E987A5142ECC1CE1_1623567959360.png?output-format=webp" class="w-32 mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/4371/4371468.png" class="w-32 mb-3">
           </div>
-          <h2 class="title-font font-regular text-2xl text-gray-900">Expertise in Industry</h2>
+          <h2 class="title-font font-regular text-2xl text-gray-900">CONSISTENTCY</h2>
         </div>
       </div>
 
@@ -1714,7 +1732,7 @@ function Product() {
 </section>
 
 <section id="CallMe" class="relative py-14 mt-[100px]">
-  <div class="z-10 absolute opacity-90 rounded-full blur-[200px] w-[40%] h-[40%] bg-blue-600 top-[200px] ml-[20%]">
+  <div class="z-10 absolute opacity-90 rounded-full blur-[200px] w-[40%] h-[40%] bg-white top-black ml-[20%]">
   </div>
   <div id="GET IN TOUCH"
     class="flex  select-auto mx-auto items-center justify-center gap-3 sm:pb-1 w-[210px] sm:w-[410px] border-b-4 sm:border-b-8 border-[#38B7FF] border-primary font-black">
@@ -1724,7 +1742,7 @@ function Product() {
         d="M21.4286 0C15.5134 0 10.7143 4.74792 10.7143 10.6C10.7143 16.4521 15.5134 21.2 21.4286 21.2C27.3437 21.2 32.1429 16.4521 32.1429 10.6C32.1429 4.74792 27.3437 0 21.4286 0ZM16.0714 24.7333C7.17076 24.7333 0 31.8276 0 40.6333V42.4C0 46.3198 3.1808 49.4667 7.14286 49.4667H28.5714V45.9333H17.8571V31.8H28.5714V24.8299C27.9855 24.7609 27.3856 24.7333 26.7857 24.7333H16.0714ZM32.1429 24.7333V35.3333H21.4286V42.4H32.1429V53H39.2857V42.4H50V35.3333H39.2857V24.7333H32.1429Z"
         fill="#38B7FF"></path>
     </svg>
-    <h2 class="text-white text-2xl sm:text-[48px]">GET IN TOUCH</h2>
+    <h2 class="text-white text-2xl sm:text-[48px]">CONNECTION </h2>
   </div>
   <div class="z-20 relative px-5 mt-20 md:mt-24 flex flex-wrap gap-7 justify-center lg:max-w-[800px] mx-auto ">
     <div
@@ -1749,7 +1767,7 @@ function Product() {
       </svg>
       <h3 class="text-base capitalize  font-black text-white sm:text-[28px]">whatsapp</h3>
       <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank"
-          href="https://wa.me/123456789">+123456789</a></p>
+          href="https://wa.me/123456789">+85512559997</a></p>
     </div>
     <div
       class="w-[100px] hover:scale-[1.1] h-[125px] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
@@ -1770,7 +1788,7 @@ function Product() {
       </svg>
       <h3 class="text-base capitalize  font-black text-white sm:text-[28px]">telegram</h3>
       <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank"
-          href="https://t.me/username">UserName</a></p>
+          href="https://t.me/username">Dita Rector</a></p>
     </div>
     <div
       class="w-[100px] hover:scale-[1.1] h-[125px] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
@@ -1784,8 +1802,8 @@ function Product() {
           fill="#38B7FF"></path>
       </svg>
       <h3 class="text-base capitalize  font-black text-white sm:text-[28px]">location</h3>
-      <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank" href="location">Syria
-          Aleppo</a></p>
+      <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank" href="location">PLACES
+          </a></p>
     </div>
     <div
       class="w-[100px] hover:scale-[1.1] h-[125px] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
@@ -1806,7 +1824,7 @@ function Product() {
       </svg>
       <h3 class="text-base capitalize  font-black text-white sm:text-[28px]">linkedin</h3>
       <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank"
-          href="https://www.linkedin.com/in/abdulbasit-abdulgani">Abdulbasit</a></p>
+          href="https://www.linkedin.com/in/abdulbasit-abdulgani">Dita Rector</a></p>
     </div>
     <div
       class="w-[100px] hover:scale-[1.1] h-[125px] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
@@ -1818,7 +1836,7 @@ function Product() {
       </svg>
       <h3 class="text-base capitalize  font-black text-white sm:text-[28px]">github</h3>
       <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank"
-          href="https://github.com/3bd0sy">@3bd0sy</a></p>
+          href="https://github.com/3bd0sy">@cod-itor</a></p>
     </div>
     <div
       class="w-[100px] hover:scale-[1.1] h-[125px] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
@@ -1836,7 +1854,7 @@ function Product() {
       </svg>
       <h3 class="text-base capitalize  font-black text-white sm:text-[28px]">email</h3>
       <p class="text-sm text-center font-regular text-[#A4A4A5] sm:text-xl  "><a target="_blank"
-          href="mailto:ax.abdo.syrain@gmail.com">Email me</a></p>
+          href="mailto:ax.abdo.syrain@gmail.com">Rectordita</a></p>
     </div>
   </div>
 </section>  
@@ -1873,8 +1891,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Navbar;
 function Navbar() {
-    const navbar = document.createElement('nav');
-    navbar.className = 'text-white';
+    const navbar = document.createElement("nav");
+    navbar.className = "text-white";
     navbar.innerHTML = `
    <!-- Header Section -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
@@ -1891,15 +1909,25 @@ function Navbar() {
                     <a href="about" data-link class="hover:text-gray-300 transition-all">About</a>
                 </nav>
 
-                <!-- Call-to-Action Button -->
-                <div class="hidden md:block">
+                <!-- Call-to-Action Button & Dark Mode Toggle -->
+                <div class="hidden md:flex items-center space-x-4">
                     <a href="#about" class="bg-yellow-500 hover:bg-yellow-400 text-black py-2 px-6 rounded-full text-lg transition-all">
                         Get in Touch
                     </a>
+                    <button id="dark-toggle" class="ml-2 p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-black dark:text-white transition-colors" title="Toggle dark mode">
+                        <svg id="dark-toggle-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 5.66l-.71-.71M4.05 4.93l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </button>
                 </div>
 
-                <!-- Mobile Menu Button (for smaller screens) -->
-                <div class="md:hidden flex items-center">
+                <!-- Mobile Menu Button (for smaller screens) & Dark Toggle -->
+                <div class="md:hidden flex items-center space-x-2">
+                    <button id="dark-toggle-mobile" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-black dark:text-white transition-colors" title="Toggle dark mode">
+                        <svg id="dark-toggle-icon-mobile" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 5.66l-.71-.71M4.05 4.93l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </button>
                     <button id="menu-button" class="text-white focus:outline-none">
                         <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -1909,11 +1937,23 @@ function Navbar() {
             </div>
         </div>
   `;
-    const menuButton = navbar.querySelector('#menu-button');
-    const mobileMenu = navbar.querySelector('#mobile-menu');
-    if (menuButton && mobileMenu) menuButton.addEventListener('click', ()=>{
-        mobileMenu.classList.toggle('hidden');
+    const menuButton = navbar.querySelector("#menu-button");
+    const mobileMenu = navbar.querySelector("#mobile-menu");
+    if (menuButton && mobileMenu) menuButton.addEventListener("click", ()=>{
+        mobileMenu.classList.toggle("hidden");
     });
+    function toggleDarkMode() {
+        const html = document.documentElement;
+        html.classList.toggle("dark");
+        if (html.classList.contains("dark")) localStorage.setItem("theme", "dark");
+        else localStorage.setItem("theme", "light");
+    }
+    if (localStorage.getItem("theme") === "dark") document.documentElement.classList.add("dark");
+    else if (localStorage.getItem("theme") === "light") document.documentElement.classList.remove("dark");
+    const darkToggle = navbar.querySelector("#dark-toggle");
+    if (darkToggle) darkToggle.addEventListener("click", toggleDarkMode);
+    const darkToggleMobile = navbar.querySelector("#dark-toggle-mobile");
+    if (darkToggleMobile) darkToggleMobile.addEventListener("click", toggleDarkMode);
     return navbar;
 }
 
@@ -1926,33 +1966,33 @@ exports.Footer = Footer;
 function Footer() {
     const footer = document.createElement('footer');
     footer.innerHTML = `
-        <div class="bg-gray-100">
+        <div class="bg-[#b29f94] mt-10">
     <div class="max-w-screen-lg px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto">
         <div class="p-5">
-            <h3 class="font-bold text-xl text-indigo-600">Company Name</h3>
+            <h3 class="font-bold text-xl text-white}">FOODIE</h3>
         </div>
         <div class="p-5">
-            <div class="text-sm uppercase text-indigo-600 font-bold">Resources</div>
+            <div class="text-sm uppercase  font-bold">Resources</div>
             <a class="my-3 block" href="/#">Documentation <span class="text-teal-600 text-xs p-1"></span></a><a
                 class="my-3 block" href="/#">Tutorials <span class="text-teal-600 text-xs p-1"></span></a><a
                 class="my-3 block" href="/#">Support <span class="text-teal-600 text-xs p-1">New</span></a>
         </div>
         <div class="p-5">
-            <div class="text-sm uppercase text-indigo-600 font-bold">Support</div>
+            <div class="text-sm uppercase  font-bold">Support</div>
             <a class="my-3 block" href="/#">Help Center <span class="text-teal-600 text-xs p-1"></span></a><a
                 class="my-3 block" href="/#">Privacy Policy <span class="text-teal-600 text-xs p-1"></span></a><a
                 class="my-3 block" href="/#">Conditions <span class="text-teal-600 text-xs p-1"></span></a>
         </div>
         <div class="p-5">
-            <div class="text-sm uppercase text-indigo-600 font-bold">Contact us</div>
-            <a class="my-3 block" href="/#">XXX XXXX, Floor 4 San Francisco, CA
-                <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">contact@company.com
+            <div class="text-sm uppercase  font-bold">Contact us</div>
+            <a class="my-3 block" href="/#">NO WHERE NEAR XXX STREET, 12345
+                <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">RectorDita@gmail.com
                 <span class="text-teal-600 text-xs p-1"></span></a>
         </div>
     </div>
 </div>
 
-<div class="bg-gray-100 pt-2">
+<div class="bg-[#b29f94] pt-2">
     <div class="flex pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col
       max-w-screen-lg items-center">
         <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
@@ -2048,11 +2088,9 @@ function Footer() {
                 </svg>
             </a>
         </div>
-        <div class="my-5">\xa9 Copyright 2020. All Rights Reserved.</div>
+        <div class="my-5">\xa9 Copyright 2025. All Rights Reserved.</div>
     </div>
 </div>
-
-<!-- Credit: Componentity.com -->
     `;
     return footer;
 }

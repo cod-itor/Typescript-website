@@ -6,7 +6,7 @@
     "typescript": "^5.8.3"
   },
   "scripts": {
-    "dev": "npx parcel src/index.html -y",
+    "dev": "npx parcel src/index.html ",
     "start": "npx tsc --watch",
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css"
   }
