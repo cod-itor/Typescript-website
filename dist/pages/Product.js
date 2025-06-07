@@ -70,11 +70,11 @@ function product() {
         class="group w-72 h-[28rem] mt-10 bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex flex-col"
         style="min-width: 18rem; max-width: 18rem;"
       >
-        <img
+        <a href="/products-detail"><img
           class="w-full h-44 object-cover"
           src="${product.image}"
           alt="${product.name}"
-        />
+        /></a>
         <div class="p-5 flex flex-col flex-1">
           <h2 class="text-xl font-semibold mb-1 group-hover:text-rose-600 dark:text-white line-clamp-1">${product.name}</h2>
           <p class="text-gray-700 dark:text-gray-300 mb-2 text-sm line-clamp-2">${product.ingredients.join(", ")}</p>
@@ -86,11 +86,11 @@ function product() {
         </div>
         <span class="text-xs text-gray-500 dark:text-gray-400">${product.difficulty}</span>
           </div>
-          <button
-        class="w-full py-2 border border-rose-600 dark:border-gray-500 text-rose-700 dark:text-white rounded-full uppercase font-bold transition duration-300 hover:bg-rose-600 hover:text-white dark:hover:bg-white dark:hover:text-black text-sm"
+          <a href="products-detail"><button
+        class="w-full py-2 border border-rose-600 dark:border-gray-500 text-rose-700 dark:text-white rounded-full uppercase font-bold transition duration-300 hover:bg-rose-600 hover:text-white dark:hover:bg-white hover:cursor-pointer dark:hover:text-black text-sm"
           >
-        Order now
-          </button>
+       Read More
+          </button></a>
         </div>
       </div>
       `;

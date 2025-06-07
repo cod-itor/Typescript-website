@@ -2,6 +2,7 @@ import { Home } from "../pages/Home";
 import Products from "../pages/Product";
 import About from "../pages/About-me";
 import { createLayout } from "./layout";
+import productDetail from "../pages/Product-detail";
 
 export function initRouter(): void {
     window.addEventListener('popstate', renderRoute);
@@ -32,6 +33,9 @@ function renderRoute(): void {
             break;
         case '/about':
             contentFn = About;
+            break;
+        case '/products-detail':
+            contentFn = productDetail;
             break;
         default:
             contentFn = Home;

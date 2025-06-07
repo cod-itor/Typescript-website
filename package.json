@@ -2,12 +2,16 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.8",
     "@tailwindcss/postcss": "^4.1.8",
-    "tailwindcss": "^4.1.8",
     "typescript": "^5.8.3"
   },
   "scripts": {
     "dev": "npx parcel src/index.html ",
     "start": "npx tsc --watch",
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8"
   }
 }

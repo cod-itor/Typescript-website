@@ -691,6 +691,7 @@ const Home_1 = require("63562866b71c9146");
 const Product_1 = __importDefault(require("dca075e57454ba67"));
 const About_me_1 = __importDefault(require("71962aa574575ad2"));
 const layout_1 = require("efab0b22979a783b");
+const Product_detail_1 = __importDefault(require("ef6f8a19a611a76e"));
 function initRouter() {
     window.addEventListener('popstate', renderRoute);
     document.addEventListener('click', (e)=>{
@@ -717,13 +718,16 @@ function renderRoute() {
         case '/about':
             contentFn = About_me_1.default;
             break;
+        case '/products-detail':
+            contentFn = Product_detail_1.default;
+            break;
         default:
             contentFn = Home_1.Home;
     }
     (0, layout_1.createLayout)(contentFn);
 }
 
-},{"63562866b71c9146":"2vbax","dca075e57454ba67":"h6DSp","71962aa574575ad2":"23bmk","efab0b22979a783b":"3BhUp"}],"2vbax":[function(require,module,exports,__globalThis) {
+},{"63562866b71c9146":"2vbax","dca075e57454ba67":"h6DSp","71962aa574575ad2":"23bmk","efab0b22979a783b":"3BhUp","ef6f8a19a611a76e":"ltaef"}],"2vbax":[function(require,module,exports,__globalThis) {
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -1597,11 +1601,11 @@ function product() {
         class="group w-72 h-[28rem] mt-10 bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex flex-col"
         style="min-width: 18rem; max-width: 18rem;"
       >
-        <img
+        <a href="/products-detail"><img
           class="w-full h-44 object-cover"
           src="${product.image}"
           alt="${product.name}"
-        />
+        /></a>
         <div class="p-5 flex flex-col flex-1">
           <h2 class="text-xl font-semibold mb-1 group-hover:text-rose-600 dark:text-white line-clamp-1">${product.name}</h2>
           <p class="text-gray-700 dark:text-gray-300 mb-2 text-sm line-clamp-2">${product.ingredients.join(", ")}</p>
@@ -1613,11 +1617,11 @@ function product() {
         </div>
         <span class="text-xs text-gray-500 dark:text-gray-400">${product.difficulty}</span>
           </div>
-          <button
-        class="w-full py-2 border border-rose-600 dark:border-gray-500 text-rose-700 dark:text-white rounded-full uppercase font-bold transition duration-300 hover:bg-rose-600 hover:text-white dark:hover:bg-white dark:hover:text-black text-sm"
+          <a href="products-detail"><button
+        class="w-full py-2 border border-rose-600 dark:border-gray-500 text-rose-700 dark:text-white rounded-full uppercase font-bold transition duration-300 hover:bg-rose-600 hover:text-white dark:hover:bg-white hover:cursor-pointer dark:hover:text-black text-sm"
           >
-        Order now
-          </button>
+       Read More
+          </button></a>
         </div>
       </div>
       `;
@@ -2093,6 +2097,121 @@ function Footer() {
 </div>
     `;
     return footer;
+}
+
+},{}],"ltaef":[function(require,module,exports,__globalThis) {
+"use strict";
+var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+    function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+            resolve(value);
+        });
+    }
+    return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+            try {
+                step(generator.next(value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function rejected(value) {
+            try {
+                step(generator["throw"](value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function step(result) {
+            result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = productDetail;
+function productDetail() {
+    const div = document.createElement("div");
+    function fetchProducts() {
+        return __awaiter(this, void 0, void 0, function*() {
+            try {
+                const response = yield fetch("https://dummyjson.com/recipes");
+                if (!response.ok) throw new Error("Network response was not ok");
+                const data = yield response.json();
+                console.log("Fetched service data:", data);
+                return data.recipes;
+            } catch (error) {
+                console.error("Fetch error:", error);
+                return [];
+            }
+        });
+    }
+    function renderSkeletonDetail() {
+        div.innerHTML = `
+      <div class="flex flex-wrap animate-pulse">
+        <div class="w-full sm:w-8/12 mb-10">
+          <div class="container mx-auto h-full sm:p-10">
+            <div class="h-10 bg-gray-200 dark:bg-gray-700 w-1/3 mb-4 rounded"></div>
+            <div class="h-8 bg-gray-200 dark:bg-gray-700 w-1/4 mb-6 rounded"></div>
+            <div class="h-16 bg-gray-200 dark:bg-gray-700 w-3/4 mb-4 rounded"></div>
+            <div class="h-8 bg-gray-200 dark:bg-gray-700 w-1/2 mb-4 rounded"></div>
+            <div class="h-12 bg-gray-200 dark:bg-gray-700 w-1/3 mb-4 rounded"></div>
+            <div class="h-10 bg-gray-200 dark:bg-gray-700 w-1/4 mb-4 rounded"></div>
+            <div class="h-12 bg-gray-200 dark:bg-gray-700 w-1/2 mb-4 rounded"></div>
+            <div class="h-10 bg-gray-200 dark:bg-gray-700 w-1/3 mb-4 rounded"></div>
+          </div>
+        </div>
+        <div class="w-full sm:w-4/12 flex items-center justify-center">
+          <div class="w-full h-48 sm:h-96 bg-gray-200 dark:bg-gray-700 rounded"></div>
+        </div>
+      </div>
+    `;
+    }
+    function renderProductDetail(product) {
+        div.innerHTML = `
+      <div class="flex flex-wrap">
+        <div class="w-full sm:w-8/12 mb-10">
+          <div class="container mx-auto h-full sm:p-10">
+            <nav class="flex px-4 justify-between items-center">
+              <div class="text-4xl font-bold">
+                ${product.name} <span class="text-green-700">.</span>
+              </div>
+              <div>
+                <img src="${product.image}" alt="" class="w-8 rounded-full">
+              </div>
+            </nav>
+            <header class="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
+              <div class="w-full">
+                <h1 class="text-4xl lg:text-6xl font-bold">${product.name}</h1>
+                <div class="w-20 h-2 bg-green-700 my-4"></div>
+                <p class="text-xl mb-4"><strong>Ingredients:</strong> ${product.ingredients.join(", ")}</p>
+                <p class="text-lg mb-10">${product.instructions}</p>
+                <div class="flex items-center space-x-4 mb-6">
+                  <span class="text-yellow-500 font-bold flex items-center"><ion-icon name="star"></ion-icon> ${product.rating}</span>
+                  <span class="text-gray-500 dark:text-gray-400">${product.difficulty}</span>
+                </div>
+                <a href="products"><button class="bg-green-500 text-white text-2xl font-medium px-4 py-2 rounded shadow hover:shadow-2xl transition-all duration-300 transform hover:cursor-pointer">Order Now</button></a>
+              </div>
+            </header>
+          </div>
+        </div>
+        <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover sm:h-screen sm:w-4/12 rounded">
+      </div>
+    `;
+    }
+    renderSkeletonDetail();
+    (()=>__awaiter(this, void 0, void 0, function*() {
+            try {
+                const products = yield fetchProducts();
+                if (products.length > 0) renderProductDetail(products[0]);
+                else div.innerHTML = '<p class="text-center text-red-500">No product found.</p>';
+            } catch (error) {
+                div.innerHTML = '<p class="text-center text-red-500">Failed to load product details.</p>';
+            }
+        }))();
+    return div;
 }
 
 },{}]},["36Eiz","6HMqo"], "6HMqo", "parcelRequire94c2", {})

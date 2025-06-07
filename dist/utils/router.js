@@ -8,6 +8,7 @@ const Home_1 = require("../pages/Home");
 const Product_1 = __importDefault(require("../pages/Product"));
 const About_me_1 = __importDefault(require("../pages/About-me"));
 const layout_1 = require("./layout");
+const Product_detail_1 = __importDefault(require("../pages/Product-detail"));
 function initRouter() {
     window.addEventListener('popstate', renderRoute);
     document.addEventListener('click', e => {
@@ -33,6 +34,9 @@ function renderRoute() {
             break;
         case '/about':
             contentFn = About_me_1.default;
+            break;
+        case '/products-detail':
+            contentFn = Product_detail_1.default;
             break;
         default:
             contentFn = Home_1.Home;

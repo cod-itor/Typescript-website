@@ -1,20 +1,110 @@
-export default function productDetail(): any
- {
-    return `
-        <div class="p-4">
-        <h2 class="text-2xl font-semibold">Product Detail Page</h2>
-        <p>This is the product detail page of your TypeScript SPA.</p>
-        <div class="mt-4">
-            <h3 class="text-xl">Product Information</h3>
-            <ul class="list-disc pl-5">
-            <li>Product Name: Example Product</li>
-            <li>Price: $99.99</li>
-            <li>Description: This is a great product with amazing features.</li>
-            <li>Category: Electronics</li>
-            <li>Stock Status: In Stock</li>
-            </ul>
+export default function productDetail(): HTMLElement {
+  const div = document.createElement("div");
+  type Products = {
+    id: number;
+    name: string;
+    ingredients: string[];
+    instructions: string;
+    image: string;
+    rating: number;
+    difficulty: string;
+  };
+  async function fetchProducts(): Promise<Products[]> {
+    try {
+      const response = await fetch("https://dummyjson.com/recipes");
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      const data = await response.json();
+      console.log("Fetched service data:", data);
+      return data.recipes as Products[];
+    } catch (error) {
+      console.error("Fetch error:", error);
+      return [];
+    }
+  }
+  // Skeleton loader for detail page
+  function renderSkeletonDetail() {
+    div.innerHTML = `
+      <div class="flex flex-wrap animate-pulse">
+        <div class="w-full sm:w-8/12 mb-10">
+          <div class="container mx-auto h-full sm:p-10">
+            <div class="h-10 bg-gray-200 dark:bg-gray-700 w-1/3 mb-4 rounded"></div>
+            <div class="h-8 bg-gray-200 dark:bg-gray-700 w-1/4 mb-6 rounded"></div>
+            <div class="h-16 bg-gray-200 dark:bg-gray-700 w-3/4 mb-4 rounded"></div>
+            <div class="h-8 bg-gray-200 dark:bg-gray-700 w-1/2 mb-4 rounded"></div>
+            <div class="h-12 bg-gray-200 dark:bg-gray-700 w-1/3 mb-4 rounded"></div>
+            <div class="h-10 bg-gray-200 dark:bg-gray-700 w-1/4 mb-4 rounded"></div>
+            <div class="h-12 bg-gray-200 dark:bg-gray-700 w-1/2 mb-4 rounded"></div>
+            <div class="h-10 bg-gray-200 dark:bg-gray-700 w-1/3 mb-4 rounded"></div>
+          </div>
         </div>
+        <div class="w-full sm:w-4/12 flex items-center justify-center">
+          <div class="w-full h-48 sm:h-96 bg-gray-200 dark:bg-gray-700 rounded"></div>
         </div>
+      </div>
     `;
+  }
 
+  // Render product detail
+  function renderProductDetail(product: Products) {
+    div.innerHTML = `
+      <div class="flex flex-wrap">
+        <div class="w-full sm:w-8/12 mb-10">
+          <div class="container mx-auto h-full sm:p-10">
+            <nav class="flex px-4 justify-between items-center">
+              <div class="text-4xl font-bold">
+                ${product.name} <span class="text-green-700">.</span>
+              </div>
+              <div>
+                <img src="${product.image}" alt="" class="w-8 rounded-full">
+              </div>
+            </nav>
+            <header class="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
+              <div class="w-full">
+                <h1 class="text-4xl lg:text-6xl font-bold">${product.name}</h1>
+                <div class="w-20 h-2 bg-green-700 my-4"></div>
+                <p class="text-xl mb-4"><strong>Ingredients:</strong> ${product.ingredients.join(
+                  ", "
+                )}</p>
+                <p class="text-lg mb-10">${product.instructions}</p>
+                <div class="flex items-center space-x-4 mb-6">
+                  <span class="text-yellow-500 font-bold flex items-center"><ion-icon name="star"></ion-icon> ${
+                    product.rating
+                  }</span>
+                  <span class="text-gray-500 dark:text-gray-400">${
+                    product.difficulty
+                  }</span>
+                </div>
+                <a href="products"><button class="bg-green-500 text-white text-2xl font-medium px-4 py-2 rounded shadow hover:shadow-2xl transition-all duration-300 transform hover:cursor-pointer">Order Now</button></a>
+              </div>
+            </header>
+          </div>
+        </div>
+        <img src="${product.image}" alt="${
+      product.name
+    }" class="w-full h-48 object-cover sm:h-screen sm:w-4/12 rounded">
+      </div>
+    `;
+  }
+
+  // Show skeleton while loading
+  renderSkeletonDetail();
+
+  (async () => {
+    try {
+      const products = await fetchProducts();
+      if (products.length > 0) {
+        renderProductDetail(products[0]); // Show first product for now
+      } else {
+        div.innerHTML =
+          '<p class="text-center text-red-500">No product found.</p>';
+      }
+    } catch (error) {
+      div.innerHTML =
+        '<p class="text-center text-red-500">Failed to load product details.</p>';
+    }
+  })();
+
+  return div;
 }
