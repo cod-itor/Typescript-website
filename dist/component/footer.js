@@ -1,4 +1,7 @@
-export function Footer() {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Footer = Footer;
+function Footer() {
     const footer = document.createElement('footer');
     footer.className = 'bg-gray-800 text-white py-6';
     footer.innerHTML = `

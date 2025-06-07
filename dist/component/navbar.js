@@ -1,4 +1,7 @@
-export default function Navbar() {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = Navbar;
+function Navbar() {
     const navbar = document.createElement('nav');
     navbar.className = 'text-white';
     navbar.innerHTML = `

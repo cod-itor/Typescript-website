@@ -1,4 +1,6 @@
-import { initRouter } from "./utils/router";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const router_1 = require("./utils/router");
 document.addEventListener("DOMContentLoaded", () => {
-    initRouter();
+    (0, router_1.initRouter)();
 });

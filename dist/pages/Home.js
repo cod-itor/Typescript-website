@@ -1,4 +1,7 @@
-export function Home() {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Home = Home;
+function Home() {
     const div = document.createElement('div');
     div.innerHTML = `
   <section>

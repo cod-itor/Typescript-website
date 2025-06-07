@@ -1,4 +1,7 @@
-export default function productDetail() {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = productDetail;
+function productDetail() {
     return `
         <div class="p-4">
         <h2 class="text-2xl font-semibold">Product Detail Page</h2>

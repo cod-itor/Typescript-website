@@ -1,4 +1,7 @@
-export default function Product() {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = Product;
+function Product() {
     const div = document.createElement('div');
     div.innerHTML = `
     <<!-- ABOUT Section -->
