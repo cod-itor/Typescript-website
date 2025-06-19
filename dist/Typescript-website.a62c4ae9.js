@@ -160,7 +160,7 @@
       });
     }
   }
-})({"36Eiz":[function(require,module,exports,__globalThis) {
+})({"9dqkn":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -2223,6 +2223,6 @@ function productDetail() {
     return div;
 }
 
-},{}]},["36Eiz","6HMqo"], "6HMqo", "parcelRequire94c2", {})
+},{}]},["9dqkn","6HMqo"], "6HMqo", "parcelRequire94c2", {})
 
 //# sourceMappingURL=Typescript-website.a62c4ae9.js.map
